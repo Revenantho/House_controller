@@ -1,0 +1,19 @@
+# Fichiers de travail / revue générés pendant la session, pas du code applicatif
+zones_review_rdc.png
+plan_rdc_nettoye.png
+
+# Fichiers d'instructions personnels (mécanisme de communication, pas du code)
+instructions_*.md
+instruction_*.md
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Config locale de l'outil Claude Code (spécifique à la machine, pas au projet)
+.claude/
+
+# Artefacts de build
+*.tsbuildinfo

@@ -1,0 +1,267 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f5f7;
+  color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #16181c;
+    color: #e8e8e8;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #1f2937;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar .spacer {
+  flex: 1;
+}
+
+.page {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .login-card {
+    background: #1f2430;
+  }
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-card button,
+.floor-switcher button,
+.device-card button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+.login-card button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.login-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.floor-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.floor-switcher button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.floor-switcher button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.room-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .room-view {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.floor-plan {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .floor-plan {
+    background: #1f2430;
+  }
+}
+
+.floor-plan svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.room-zone {
+  fill: rgba(37, 99, 235, 0.15);
+  stroke: #2563eb;
+  stroke-width: 0.5;
+  cursor: pointer;
+  transition: fill 0.15s ease;
+}
+
+.room-zone:hover {
+  fill: rgba(37, 99, 235, 0.3);
+}
+
+.room-zone.selected {
+  fill: rgba(37, 99, 235, 0.45);
+}
+
+.room-zone-label {
+  font-size: 3px;
+  fill: #111827;
+  pointer-events: none;
+}
+
+.room-detail {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .room-detail {
+    background: #1f2430;
+  }
+  .room-zone-label {
+    fill: #e8e8e8;
+  }
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.device-card {
+  background: white;
+  border-radius: 10px;
+  padding: 0.85rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .device-card {
+    background: #1f2430;
+  }
+}
+
+.device-card h4 {
+  margin: 0 0 0.25rem;
+}
+
+.device-card .state {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+.device-card .actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.device-card button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  .device-card button {
+    background: #374151;
+    color: #e8e8e8;
+  }
+}
+
+.equipment-group {
+  margin-bottom: 1.5rem;
+}
+
+.equipment-group h3 {
+  margin-bottom: 0.5rem;
+}
+
+.stub-note {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  font-style: italic;
+}

@@ -1,0 +1,82 @@
+{
+  "floor_name": "Rez-de-chaussée",
+  "display_order": 0,
+  "image_path": "/static/plans/rdc.png",
+  "source_note": "Zones déduites par mesure précise sur le plan PDF réel (Copie de Plan Rez-de-Chaussée), échelle 1/100, via repérage pixel des murs sur grille. Coordonnées approximatives, pas un relevé topographique.",
+  "rooms": [
+    {
+      "name": "Terrasse bois",
+      "note": "Zone fusionnée : jardin + terrasse bois + terrasse béton, à la demande de l'utilisateur",
+      "zone_shape": [
+        {"xPct": 18, "yPct": 3}, {"xPct": 68, "yPct": 3}, {"xPct": 95, "yPct": 9},
+        {"xPct": 95, "yPct": 32}, {"xPct": 78.1, "yPct": 32}, {"xPct": 78.1, "yPct": 39.4},
+        {"xPct": 52.6, "yPct": 39.4}, {"xPct": 52.6, "yPct": 50.3}, {"xPct": 39.6, "yPct": 50.3},
+        {"xPct": 39.6, "yPct": 90}, {"xPct": 2, "yPct": 90}, {"xPct": 2, "yPct": 3}
+      ]
+    },
+    {
+      "name": "Séjour",
+      "note": "Zone fusionnée : séjour + salon + cuisine, plan ouvert sans cloison (une seule surface de 51.70 m² sur le plan d'origine)",
+      "zone_shape": [
+        {"xPct": 39.6, "yPct": 50.3}, {"xPct": 52.6, "yPct": 50.3}, {"xPct": 52.6, "yPct": 39.4},
+        {"xPct": 78.1, "yPct": 39.4}, {"xPct": 78.1, "yPct": 61.9}, {"xPct": 39.6, "yPct": 61.9}
+      ]
+    },
+    {
+      "name": "Lingerie",
+      "zone_shape": [
+        {"xPct": 78.1, "yPct": 35.4}, {"xPct": 85.7, "yPct": 35.4},
+        {"xPct": 85.7, "yPct": 49.5}, {"xPct": 78.1, "yPct": 49.5}
+      ]
+    },
+    {
+      "name": "Garage",
+      "zone_shape": [
+        {"xPct": 78.1, "yPct": 49.3}, {"xPct": 91, "yPct": 49.3},
+        {"xPct": 91, "yPct": 68.9}, {"xPct": 78.1, "yPct": 68.9}
+      ]
+    },
+    {
+      "name": "Bureau",
+      "zone_shape": [
+        {"xPct": 53.2, "yPct": 61.9}, {"xPct": 65.5, "yPct": 61.9},
+        {"xPct": 65.5, "yPct": 68.3}, {"xPct": 53.2, "yPct": 68.3}
+      ]
+    },
+    {
+      "name": "Hall",
+      "zone_shape": [
+        {"xPct": 65.5, "yPct": 61.9}, {"xPct": 74.1, "yPct": 61.9},
+        {"xPct": 74.1, "yPct": 68.3}, {"xPct": 65.5, "yPct": 68.3}
+      ]
+    },
+    {
+      "name": "WC",
+      "zone_shape": [
+        {"xPct": 74.1, "yPct": 61.9}, {"xPct": 78.6, "yPct": 61.9},
+        {"xPct": 78.6, "yPct": 68.3}, {"xPct": 74.1, "yPct": 68.3}
+      ]
+    },
+    {
+      "name": "SDE",
+      "zone_shape": [
+        {"xPct": 53.2, "yPct": 68.3}, {"xPct": 57.9, "yPct": 68.3},
+        {"xPct": 57.9, "yPct": 77.6}, {"xPct": 53.2, "yPct": 77.6}
+      ]
+    },
+    {
+      "name": "Chambre 1",
+      "zone_shape": [
+        {"xPct": 57.9, "yPct": 68.3}, {"xPct": 69.7, "yPct": 68.3},
+        {"xPct": 69.7, "yPct": 77.6}, {"xPct": 57.9, "yPct": 77.6}
+      ]
+    },
+    {
+      "name": "Abri",
+      "zone_shape": [
+        {"xPct": 70.3, "yPct": 68.3}, {"xPct": 78.6, "yPct": 68.3},
+        {"xPct": 78.6, "yPct": 77.6}, {"xPct": 70.3, "yPct": 77.6}
+      ]
+    }
+  ]
+}
