@@ -17,3 +17,9 @@ Thumbs.db
 
 # Artefacts de build
 *.tsbuildinfo
+
+# Rapports de couverture générés (backend + frontend)
+backend/.coverage
+backend/coverage.xml
+backend/htmlcov/
+frontend/coverage/
